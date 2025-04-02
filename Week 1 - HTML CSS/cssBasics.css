@@ -1,0 +1,191 @@
+/* Global Styling */
+body {
+  background-color: #7c4ea6;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Profile Container */
+.profile-container {
+  padding: 0 20px;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 10px;
+  width: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: black;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 20px;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:first-of-type {
+  text-decoration: underline;
+  background-color: white;
+  color: #7c4ea6;
+}
+
+/* About me and Projects */
+
+section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+}
+
+section .about {
+  padding: 5px;
+  padding-right: 20px;
+  border-right: 2px solid white;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+section .project {
+  padding: 0 20px;
+  margin: auto;
+}
+
+section .project ul li {
+  list-style: decimal;
+  padding-bottom: 5px;
+}
+
+/* Skills */
+
+table {
+  margin-top: 20px;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+}
+
+tr {
+  width: 100%;
+}
+
+th {
+  font-weight: 600;
+}
+
+th,
+td {
+  width: 50%;
+  background-color: white;
+  color: #7c4ea6;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+td:hover,
+th:hover {
+  background-color: #7c4ea6;
+  color: white;
+
+  border: 1px solid white;
+}
+
+/* Contact Me */
+form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 20px 0;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 60%;
+  margin: 20px auto;
+  box-shadow: 0 0 20px 2px inset whitesmoke;
+}
+
+form label {
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  margin: auto;
+}
+
+form input {
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 50%;
+  margin: auto;
+}
+
+form select {
+  padding: 5px;
+  border-radius: 6px;
+  width: 50%;
+  margin: auto;
+}
+
+.submit {
+  padding: 10px;
+  background-color: white;
+  color: #7c4ea6;
+  border: 1px solid white;
+  width: 50%;
+  margin: 20px auto 0;
+}
+
+.submit:hover {
+  background-color: #7c4ea6;
+  color: white;
+  border: 1px solid white;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: black;
+  color: #7c4ea6;
+  padding: 10px;
+}

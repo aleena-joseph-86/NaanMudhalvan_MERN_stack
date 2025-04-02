@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background: black;
+        box-shadow: 0px 0px 100px whitesmoke inset;
+      }
+
+      #inputForm {
+        padding: 60px;
+        text-align: center;
+        background: transparent;
+        color: white;
+        box-shadow: 0px 0px 50px whitesmoke inset;
+        height: 304px;
+        border-radius: 20px;
+      }
+
+      #inputForm input {
+        padding: 10px;
+        color: white;
+        background: transparent;
+        box-shadow: 0px 0px 10px whitesmoke inset;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: white;
+      }
+
+      #inputForm .btns {
+        padding: 5px;
+      }
+
+      #inputForm .btns button {
+        padding: 6px;
+        border-radius: 6px;
+        color: white;
+        background: transparent;
+        box-shadow: 0px 0px 10px whitesmoke inset;
+        font-size: 16px;
+      }
+
+      #inputForm p {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      #inputForm .btns button:hover {
+        color: black;
+        background: white;
+        box-shadow: 0px 0px 10px black inset;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <script>
+      let a = "aleena";
+      console.log(a); // displays in the terminal (console)
+      document.write(a); //displays in the dom
+      alert("pop up message"); // pop up message
+    </script> -->
+
+    <!-- <button id="btn" onclick="btnClick()">Click here</button>
+    <p id="p"></p> -->
+    <h1>Calculator</h1>
+
+    <div id="inputForm">
+      <label for="no1">Number 1</label>
+      <br />
+      <input type="text" id="no1" name="no1" placeholder="ex: 23" />
+      <br />
+      <br />
+      <label for="no2">Number 2</label>
+      <br />
+      <input type="text" id="no2" name="no2" placeholder="ex: 54" />
+      <br />
+      <br />
+      <div class="btns">
+        <button onclick="add()">Addition</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="divide()">Divition</button>
+        <button onclick="modulo()">Reminder</button>
+      </div>
+      <p id="result"></p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
