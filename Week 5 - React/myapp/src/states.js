@@ -24,7 +24,7 @@ const States = () => {
 
   useEffect(() => {
     setwindowWidth(Handle);
-  }, [windowWidth]);
+  });
 
   const toChange = () => {
     const Random = Math.floor(Math.random() * colors.length);
