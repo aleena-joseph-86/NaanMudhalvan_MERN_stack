@@ -4,6 +4,9 @@ import "./index.css";
 // import { App, SayHello } from "./App";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import States from "./states";
+import Icons from "./icons";
+import Cart from "./cart";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,9 +15,12 @@ root.render(
   // </React.StrictMode>
   <>
     {/* <SayHello /> */}
-    <App />
+    {/* <App /> */}
+    {/* <States/>
+    <Icons/> */}
     {/* <h1> h1 </h1>
     <h2> h2 </h2> */}
+    <Cart></Cart>
   </>
 );
 
