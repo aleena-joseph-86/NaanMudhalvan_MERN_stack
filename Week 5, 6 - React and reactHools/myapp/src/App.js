@@ -1,5 +1,4 @@
 import MovieData from "./movieData";
-import User from "./user";
 
 function App() {
   const userData = {
@@ -70,6 +69,7 @@ function App() {
       {/* <User name={userData.name} rollno={userData.rollno} image={userData.image} /> */}
 
       <MovieData movieData={movieData} />
+     
     </>
   );
 }
