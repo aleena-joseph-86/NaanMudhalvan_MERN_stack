@@ -9,9 +9,11 @@ import {
 import axios from "axios";
 import { API_URL } from "../Constants/URL";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Read = () => {
   const [apiData, setApiData] = React.useState([]);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const callGetAPI = async () => {
     const response = axios.get(API_URL);
@@ -25,6 +27,12 @@ const Read = () => {
     setTimeout(() => callGetAPI(), 0);
   };
 
+  const handleUpdate = (item) => {
+    navigate(
+      `/update?id=${item.id}&firstName=${item.firstName}&lastName=${item.lastName}`
+    );
+  };
+
   useEffect(() => {
     callGetAPI();
   }, []);
@@ -35,6 +43,8 @@ const Read = () => {
         <TableRow>
           <TableCell style={{ fontWeight: "bold" }}>First Name</TableCell>
           <TableCell style={{ fontWeight: "bold" }}>Last Name</TableCell>
+          <TableCell style={{ fontWeight: "bold" }}>Actions</TableCell>{" "}
+          {/* Add Actions header */}
         </TableRow>
       </TableHead>
       <TableBody>
@@ -43,8 +53,21 @@ const Read = () => {
             <TableCell>{item.firstName}</TableCell>
             <TableCell>{item.lastName}</TableCell>
             <TableCell>
-              <Button variant="contained" onClick={() => handleDelete(item.id)}>
+              <Button
+                variant="contained"
+                onClick={() => handleDelete(item.id)}
+                style={{ marginRight: "10px" }}
+              >
                 Delete
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => handleUpdate(item)}
+              >
+                {" "}
+                {/* Add Update button */}
+                Update
               </Button>
             </TableCell>
           </TableRow>
